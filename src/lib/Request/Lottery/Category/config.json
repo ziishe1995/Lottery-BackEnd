@@ -1,0 +1,26 @@
+{
+  "list": {
+    "uri": "",
+    "method": "get"
+  },
+  "option": {
+    "uri": "options",
+    "method": "get"
+  },
+  "create": {
+    "uri": "create",
+    "method": "post"
+  },
+  "update": {
+    "uri": "update",
+    "method": "post"
+  },
+  "updateSequence": {
+    "uri": "update_sequence",
+    "method": "post"
+  },
+  "delete": {
+    "uri": "del",
+    "method": "delete"
+  }
+}

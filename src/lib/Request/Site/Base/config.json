@@ -1,0 +1,10 @@
+{
+  "detail": {
+    "uri": "",
+    "method": "get"
+  },
+  "update": {
+    "uri": "update",
+    "method": "post"
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"test": {
+		"client_id": "a889aab3-ee16-4b33-88c1-4efbb70c3ed1",
+		"client_secret": "bJ5LUdWIda1ZMzYsiZhtkAIK7tJfUUQ17L9HYawS"
+	},
+	"rc": {
+		"client_id": "",
+		"client_secret": ""
+	},
+	"stable": {
+		"client_id": "892eac2f-6c68-44ea-a923-8b46d2e43df6",
+		"client_secret": "L4VFzObaYFLvqyJSwGCUeIyoNsLVb6jvy1smvfN2"
+	}
+}

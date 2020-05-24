@@ -1,0 +1,14 @@
+{
+  "list": {
+    "uri": "list",
+    "method": "post"
+  },
+  "total": {
+    "uri": "total",
+    "method": "post"
+  },
+  "options": {
+    "uri": "options",
+    "method": "get"
+  }
+}

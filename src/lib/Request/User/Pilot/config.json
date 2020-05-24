@@ -1,0 +1,14 @@
+{
+  "profile": {
+    "uri": "profile",
+    "method": "get"
+  },
+  "update": {
+    "uri": "profile/edit",
+    "method": "post"
+  },
+  "nodes": {
+    "uri": "nodes",
+    "method": "get"
+  }
+}

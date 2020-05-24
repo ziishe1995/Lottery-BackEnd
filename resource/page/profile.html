@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-TW">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>GIN</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	
+	<!-- ================== BEGIN BASE CSS STYLE ================== -->
+	<link rel="shortcut icon" href="../img/favicon.ico"/>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link href="../assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
+	<link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
+	<link href="../assets/css/default/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/default/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/default/theme/blue.css" rel="stylesheet" id="theme">
+	<!-- ================== END BASE CSS STYLE ================== -->
+    
+    <!-- ================== custom css style ================== -->
+	<link rel="stylesheet" href="../css/style.css">
+    <!-- ================== custom css style ================== -->
+
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/pace/pace.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+</head>
+<body>
+	<!-- begin #page-loader -->
+	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
+	<!-- end #page-loader -->
+	
+	<!-- begin #page-container -->
+	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+		<!-- begin #header -->
+		<div id="header" class="header navbar-default">
+			<!-- begin navbar-header -->
+			<div class="navbar-header">
+				<a href="../index.html" class="navbar-brand"><span class="navbar-logo"></span> <b>GIN</b> </a>
+				<button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- end navbar-header -->
+			
+			<!-- begin header-nav -->
+			<ul class="navbar-nav navbar-right">
+				<li class="dropdown navbar-user">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+						<img src="../assets/img/user/user-13.jpg" alt="" /> 
+						<span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a href="../page/profile.html" class="dropdown-item">个人资料</a>
+						<div class="dropdown-divider"></div>
+						<a href="javascript:;" class="dropdown-item">登出</a>
+					</div>
+				</li>
+			</ul>
+			<!-- end header navigation right -->
+		</div>
+		<!-- end #header -->
+		
+		<!-- begin #sidebar -->
+		<div id="sidebar" class="sidebar">
+			<!-- begin sidebar scrollbar -->
+			<div data-scrollbar="true" data-height="100%">
+				<!-- begin sidebar user -->
+				<ul class="nav">
+					<li class="nav-profile">
+						<a href="javascript:;" data-toggle="nav-profile">
+							<div class="cover with-shadow"></div>
+							<div class="image">
+								<img src="../assets/img/user/user-13.jpg" alt="" />
+							</div>
+							<div class="info">
+								Sean Ngu
+								<small>Front end developer</small>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!-- end sidebar user -->
+				<!-- begin sidebar nav -->
+				<ul class="nav">
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-cog"></i>
+							<span>系统设置</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="../page/setting/permission.html">角色管理</a></li>
+							<li><a href="../page/setting/account.html">帐号管理</a></li>
+						</ul>
+					</li>
+					
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-folder"></i>
+							<span>职级管理</span>
+						</a>
+						<ul class="sub-menu">
+							<li class=""><a href="../page/rank/company.html">公司帐号</a></li>
+							<li><a href="../page/rank/supervisor.html">主管帐号</a></li>
+							<li><a href="../page/rank/staff.html">职员帐号</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="../page/company.html">
+							<!-- <b class="caret"></b> -->
+							<i class="fas fa-columns"></i>
+							<span>公司设定</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="../page/currency-set.html">
+							<!-- <b class="caret"></b> -->
+							<i class="fas fa-sync"></i>
+							<span>币别设定</span>
+						</a>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-table"></i>
+							<span>汇率管理</span>
+						</a>
+						<ul class="sub-menu">
+							<li class=""><a href="../page/rate/exchange-set.html">兑换设定</a></li>
+							<li><a href="../page/rate/rate-set.html">汇率设定</a></li>
+						</ul>
+					</li>
+					<li class="has-sub ">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-database"></i>
+							<span>银行管理</span>
+						</a>
+						<ul class="sub-menu">
+							<li class=""><a href="../page/bank/account.html">帐户设定</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-copy"></i>
+							<span>订单管理</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="../page/order/apply.html">订单申请</a></li>
+							<li><a href="../page/order/review.html">订单审核</a></li>
+						</ul>
+					</li>
+					<li class="has-sub">
+						<a href="javascript:;">
+							<b class="caret"></b>
+							<i class="fas fa-history"></i>
+							<span>历程记录</span>
+						</a>
+						<ul class="sub-menu">
+							<li><a href="../page/history/account_login.html">帐号登入历程</a></li>
+						</ul>
+					</li>
+					<!-- begin sidebar minify button -->
+					<li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+					<!-- end sidebar minify button -->
+				</ul>
+				<!-- end sidebar nav -->
+			</div>
+			<!-- end sidebar scrollbar -->
+		</div>
+		<div class="sidebar-bg"></div>
+		<!-- end #sidebar -->
+		
+		<!-- begin #content -->
+		<div id="content" class="content">
+			<!-- begin breadcrumb -->
+			<ol class="breadcrumb pull-right m-b-20">
+                <li class="breadcrumb-item"><a href="javascript:;">首页</a></li>
+                <li class="breadcrumb-item active">个人资料</li>
+            </ol>
+			<!-- end breadcrumb -->
+			<!-- begin page-header -->
+			<!-- <h1 class="page-header">帐号管理</h1> -->
+			<!-- end page-header -->
+			
+			<!-- begin row -->
+			<div class="">
+                <!-- begin panel -->
+                <div class="panel panel-inverse" style="clear:both;">
+                    <!-- begin panel-heading -->
+                    <div class="panel-heading p-t-10">
+                        <h4 class="text-white m-b-0">个人资料</h4>
+                    </div>
+                    <!-- end panel-heading -->
+                    <!-- begin panel-body -->
+                    <div class="panel-body">
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label">帐号</label>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-txt border-line">admin</div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label required">昵称</label>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label">角色名称</label>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-txt border-line">系统管理员</div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label required">旧密码</label>
+                            <div class="col-md-6 col-lg-6">
+								<input type="password" class="form-control">
+								<div class="m-t-1 form-txt text-red">
+									若不修改密码, 请保留空白
+								</div>
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label required">新密码</label>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label required">新密码确认</label>
+                            <div class="col-md-6 col-lg-6">
+                                <input type="password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label">最后登入时间</label>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-txt border-line">2019-06-18 15:00:00</div>
+                                
+                            </div>
+                        </div>
+                        <div class="form-group row m-b-15">
+                            <label class="col-md-3 col-lg-2 col-form-label">图像</label>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="upload-box">
+                                    <div class="custom-file">
+										<label for="file-upload" class="custom-file-upload">
+											选择档案
+										</label>
+										<input id="file-upload" type="file"/>
+									</div>
+									<div class="text-red">
+										上传图片限制尺寸为260X260，档案大小256KB
+									</div>
+								</div>
+								<div class="upload-info">
+									<div class="table-responsive m-t-5">
+										<table class="table table-bordered text-center">
+											<thead>
+												<tr>
+													<th>预览</th>
+													<th>档案资讯</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><img src="../assets/img/user/user-13.jpg" alt=""></td>
+													<td class="text-left">
+														档案名称: logo.png<br/>
+														档案大小: 195.68KB
+													</td>
+													<td>
+														<span class="" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="上传档案" data-original-title="" title="">
+															<a class="text-white btn btn-primary btn-control" id="delete-dialog">
+																<i class="fas fa-cloud-upload-alt"></i>
+															</a>
+														</span>
+														<span class="" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="删除档案" data-original-title="" title="">
+															<a class="text-white btn btn-danger btn-control" id="delete-dialog">
+																<i class="fas fa-trash-alt"></i>
+															</a>
+														</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="m-t-30">
+                            <a href="" class="btn btn-primary width-70">储存</a>
+                            <a href="" class="btn btn-white width-70" >取消</a>
+                        </div>
+                    </div>
+                    <!-- end panel-body -->
+                </div>
+                <!-- end panel -->
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end #content -->
+		
+		<!-- #modal-without-animation -->
+		
+		<!-- begin scroll to top btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+		<!-- end scroll to top btn -->
+	</div>
+	<!-- end page container -->
+	
+	<!-- ================== BEGIN BASE JS ================== -->
+	<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<script src="../assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="../../assets/crossbrowserjs/html5shiv.js"></script>
+		<script src="../../assets/crossbrowserjs/respond.min.js"></script>
+		<script src="../../assets/crossbrowserjs/excanvas.min.js"></script>
+	<![endif]-->
+	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
+	<script src="../assets/js/apps.min.js"></script>
+	<!-- ================== END BASE JS ================== -->
+	
+	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+	<script src="../assets/plugins/highlight/highlight.common.js"></script>
+	<script src="../assets/js/demo/render.highlight.js"></script>
+    <!-- ================== END PAGE LEVEL JS ================== -->
+	<script>
+		$(document).ready(function() {
+			App.init();
+			Highlight.init();
+		});
+	</script>
+</body>
+</html>

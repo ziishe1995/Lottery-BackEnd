@@ -1,0 +1,10 @@
+{
+  "login": {
+    "uri": "login",
+    "method": "post"
+  },
+  "generate": {
+    "uri": "token/personal/generate",
+    "method": "post"
+  }
+}

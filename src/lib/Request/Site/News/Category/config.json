@@ -1,0 +1,14 @@
+{
+  "list": {
+    "uri": "",
+    "method": "get"
+  },
+  "option": {
+    "uri": "options",
+    "method": "get"
+  },
+  "update": {
+    "uri": "update",
+    "method": "post"
+  }
+}

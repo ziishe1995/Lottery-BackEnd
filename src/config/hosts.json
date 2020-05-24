@@ -1,0 +1,14 @@
+{
+	"test": {
+		"host": "lotterydraw.xing99.cc",
+		"prefix": "api"
+	},
+	"rc": {
+		"host": "",
+		"prefix": "api"
+	},
+	"stable": {
+		"host": "8jincai.com",
+		"prefix": "api"
+	}
+}

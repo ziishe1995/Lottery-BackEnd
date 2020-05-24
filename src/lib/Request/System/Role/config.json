@@ -1,0 +1,38 @@
+{
+  "list": {
+    "uri": "public/index",
+    "method": "post"
+  },
+  "total": {
+    "uri": "public/total",
+    "method": "post"
+  },
+  "detail": {
+    "uri": "public/{id}",
+    "method": "get"
+  },
+  "create": {
+    "uri": "custom/create",
+    "method": "post"
+  },
+  "update": {
+    "uri": "custom/edit",
+    "method": "post"
+  },
+  "delete": {
+    "uri": "custom/delete/{id}",
+    "method": "delete"
+  },
+  "nodes": {
+    "uri": "public/authorized/node",
+    "method": "get"
+  },
+  "own": {
+    "uri": "public/node/map",
+    "method": "post"
+  },
+  "bind": {
+    "uri": "public/node/bind",
+    "method": "post"
+  }
+}
